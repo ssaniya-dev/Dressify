@@ -2,4 +2,9 @@
     <string name="app_name">Test App</string>
     <string name="edit_message">Enter a message</string>
     <string name="button_send">Send</string>
+    <string name="enter_username">johndoe</string>
+    <string name="login_button">login!</string>
+    <string name="enter_password">password</string>
+    <string name="username_text">username:</string>
+    <string name="password_text">password:</string>
 </resources>

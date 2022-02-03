@@ -1,3 +1,4 @@
 <resources>
     <string name="app_name">Dressify</string>
+    <string name="this_is_main_activiy">This is Main Activiy</string>
 </resources>

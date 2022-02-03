@@ -9,7 +9,7 @@
     <TextView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="This is Main Activiy"
+        android:text="This is main activity"
         android:layout_centerInParent="true"
         android:textStyle="bold"
         android:textSize="20sp"

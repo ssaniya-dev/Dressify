@@ -1,28 +1,71 @@
-package com.example.dressify;
-
 import androidx.appcompat.app.AppCompatActivity;
 
+
+import android.content.Intent;
+
 import android.os.Bundle;
-import android.os.Handler;
 
-public class LoadingScreen extends AppCompatActivity {
-    private long loading_time = 3000;
+import android.view.Window;
+
+import android.view.WindowManager;
+
+
+public class SplashActivity extends AppCompatActivity {
+
+
     @Override
-    protected void onCreate(Bundle savedInstanceState) {
-        super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_loading_screen);
 
-        final Runnable r = new Runnable() {
+    protected void onCreate(Bundle savedInstanceState) {
+
+        super.onCreate(savedInstanceState);
+
+
+        Window window = getWindow() ;
+
+
+        window.addFlags(WindowManager.LayoutParams.FLAG_FULLSCREEN);
+
+        setContentView(R.layout.activity_splash);
+
+
+
+
+        Thread splashTread = new Thread(){
+
+
+            @Override
+
             public void run() {
-                startActivity(this, MainActivity);
+
+                try {
+
+                    sleep(3000);
+
+                    startActivity(new Intent(getApplicationContext(),MainActivity.class));
+
+                    finish();
+
+                } catch (InterruptedException e) {
+
+                    e.printStackTrace();
+
+                }
+
+
+                super.run();
+
             }
+
         };
 
-        }
-//        Handler.postDelayed({
-//                startActivity(Intent (this, MainActivity));
-//                finish();
-//        }, loading_time)
+
+        splashTread.start();
+
+
+
+
+
     }
+
 
 }

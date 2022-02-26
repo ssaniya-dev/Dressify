@@ -5,6 +5,7 @@
     android:layout_width="match_parent"
     android:gravity="center"
     android:layout_height="match_parent"
+    android:background="@color/bgcolor"
     tools:context=".MainActivity">
 
     <TextView
@@ -13,7 +14,7 @@
         android:layout_height="wrap_content"
         android:layout_marginBottom="40dp"
         android:text="Dressify"
-        android:textColor="@color/black"
+        android:textColor="@color/textcolor"
         android:textSize="90sp"
         android:textStyle="bold" />
 
@@ -22,6 +23,7 @@
         android:layout_height="95dp"
         android:layout_marginLeft="100dp"
         android:layout_marginTop="160dp"
+        android:indeterminateTint="@color/textcolor"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="@id/appName"
         app:layout_constraintStart_toStartOf="@+id/appName"

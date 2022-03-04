@@ -39,6 +39,7 @@
         android:layout_marginTop="30dp"
         android:layout_marginRight="60dp"
         android:ellipsize="start"
+        android:inputType="textPassword"
         android:hint="Password"
         android:textColorHint="@color/textcolor"
         android:textSize="35sp"
@@ -59,6 +60,7 @@
         app:backgroundTint="@color/textcolor"
         android:textStyle="bold"
         />
+
 
 
 </RelativeLayout>

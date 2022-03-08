@@ -15,6 +15,7 @@
     <TextView
         android:id="@+id/textVIew"
         android:text="Dressify"
+        android:textColor="@color/textcolor"
         android:textSize="54sp"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
@@ -24,6 +25,8 @@
 
     <TextView
         android:layout_width="match_parent"
+        android:textStyle="bold"
+        android:textColor="@color/textcolor"
         android:layout_height="wrap_content"
         android:paddingTop="@dimen/nav_header_vertical_spacing"
         android:text="Elle Woods"
@@ -33,5 +36,6 @@
         android:id="@+id/textView"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:textColor="@color/textcolor"
         android:text="@string/nav_header_subtitle" />
 </LinearLayout>

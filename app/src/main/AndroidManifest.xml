@@ -10,10 +10,17 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.LoadingActivity">
         <activity
-            android:name=".Closet"
-            android:exported="false"
-            android:label="@string/title_activity_closet"
-            android:theme="@style/Theme.LoadingActivity.NoActionBar" />
+            android:name=".dresses"
+            android:exported="false" />
+        <activity
+            android:name=".pants"
+            android:exported="false" />
+        <activity
+            android:name=".shirts"
+            android:exported="false" />
+        <activity
+            android:name=".home"
+            android:exported="false" />
         <activity
             android:name=".LoginScreen"
             android:exported="false" />

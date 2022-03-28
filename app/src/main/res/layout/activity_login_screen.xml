@@ -48,6 +48,7 @@
     <Button
         android:layout_width="match_parent"
         android:layout_height="60dp"
+        android:id="@+id/loginb"
         android:text="Login"
         android:textColor="@color/bgcolor"
         android:layout_below="@+id/pass_edit"

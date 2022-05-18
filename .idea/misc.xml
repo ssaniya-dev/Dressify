@@ -14,8 +14,9 @@
         <entry key="app/src/main/res/layout/activity_dresses.xml" value="0.14792646430098333" />
         <entry key="app/src/main/res/layout/activity_home.xml" value="0.10342666109486001" />
         <entry key="app/src/main/res/layout/activity_login_screen.xml" value="0.15413314302845377" />
-        <entry key="app/src/main/res/layout/activity_main.xml" value="0.1" />
+        <entry key="app/src/main/res/layout/activity_main.xml" value="0.1549362182617188" />
         <entry key="app/src/main/res/layout/activity_pants.xml" value="0.14792646430098333" />
+        <entry key="app/src/main/res/layout/activity_shirts.xml" value="0.1" />
         <entry key="app/src/main/res/layout/app_bar_closet.xml" value="0.1" />
         <entry key="app/src/main/res/layout/content_closet.xml" value="0.1" />
         <entry key="app/src/main/res/layout/fragment_gallery.xml" value="0.1" />
@@ -25,6 +26,7 @@
         <entry key="app/src/main/res/menu/activity_main_drawer.xml" value="0.8884258523073918" />
         <entry key="app/src/main/res/menu/closet.xml" value="0.48444227240645205" />
         <entry key="app/src/main/res/mipmap-anydpi-v26/ic_launcher.xml" value="0.1" />
+        <entry key="app/src/main/res/mipmap-anydpi-v26/ic_launcher_round.xml" value="0.152" />
       </map>
     </option>
   </component>

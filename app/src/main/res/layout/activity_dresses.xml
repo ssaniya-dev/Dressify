@@ -4,6 +4,90 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".dresses">
+    tools:context=".dresses"
+    android:background="@color/bgcolor">
+
+
+
+    <GridLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_margin="10sp"
+        android:rowCount="3"
+        android:columnCount="3">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/txtdress"
+            android:textSize="50dp"
+            android:text="Dress"
+            android:textStyle="bold"
+            android:layout_row="0"
+            android:layout_column="0"
+            android:textColor="@color/textcolor">
+        </TextView>
+        <Button
+            android:backgroundTint="@color/textcolor"
+            android:layout_gravity="fill"
+            android:layout_columnWeight="1"
+            android:layout_rowWeight="1"
+            android:layout_margin="5sp"
+            android:layout_row="1"
+            android:layout_column="0"
+            android:textSize="18sp"
+            android:text="Dress"
+            />
+        <Button
+            android:backgroundTint="@color/textcolor"
+            android:layout_gravity="fill"
+            android:layout_columnWeight="1"
+            android:layout_rowWeight="1"
+            android:layout_margin="5sp"
+            android:textSize="18sp"
+            android:text="Dress"
+            />
+        <Button
+            android:backgroundTint="@color/textcolor"
+            android:layout_gravity="fill"
+            android:layout_columnWeight="1"
+            android:layout_rowWeight="1"
+            android:layout_margin="5sp"
+            android:textSize="18sp"
+            android:text="Dress"
+            />
+        <Button
+            android:backgroundTint="@color/textcolor"
+            android:layout_gravity="fill"
+            android:layout_columnWeight="1"
+            android:layout_rowWeight="1"
+            android:layout_margin="5sp"
+            android:textSize="18sp"
+            android:text="Dress"
+            />      <Button
+        android:backgroundTint="@color/textcolor"
+        android:layout_gravity="fill"
+        android:layout_columnWeight="1"
+        android:layout_rowWeight="1"
+        android:layout_margin="5sp"
+        android:textSize="18sp"
+        android:text="Dress"
+        />
+
+        <Button
+            android:backgroundTint="@color/textcolor"
+            android:layout_gravity="fill"
+            android:layout_columnWeight="1"
+            android:layout_rowWeight="1"
+            android:layout_margin="5sp"
+            android:textSize="18sp"
+            android:text="Dress"
+            />
+
+
+
+
+    </GridLayout>
+
+
 
 </androidx.constraintlayout.widget.ConstraintLayout>

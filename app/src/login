@@ -9,13 +9,13 @@ class LoginFragment : Fragment() {
 
             val view = it
 
-            (requireActivity().application as LiveChatApplication)
-                .chatApp.loginAsync(Credentials.emailPassword(eMail, pWord)) {
+            (requireActivity().application as DressifyApplication)
+                .dressifyApp.loginAsync(Credentials.emailPassword(eMail, pWord)) {
                 if (it.isSuccess) {
                     Log.v("QUICKSTART", "Successfully logged in Email: $eMail, Password: $pWord")
 
                     val action : ActionLoginFragmentToChatRoomFragment =
-                        com.mongodb.realm.mongodblivechat.ui.login.LoginFragmentDirections.actionLoginFragmentToChatRoomFragment()
+                        com.mongodb.realm.mongodblivechat.ui.login.LoginFragmentDirections.actionLoginFragmentToDressifyFragment()
                     action.email = editTextEmailAddress.text.toString()
                     action.password = editTextPassword.text.toString()
                     Navigation.findNavController(view).navigate(action)

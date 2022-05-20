@@ -1,0 +1,29 @@
+class LoginFragment : Fragment() {
+
+    override fun onActivityCreated(savedInstanceState: Bundle?) {
+        super.onActivityCreated(savedInstanceState)
+
+        
+            val eMail = editTextEmailAddress.text.toString()
+            val pWord = editTextPassword.text.toString()
+
+            val view = it
+
+            (requireActivity().application as LiveChatApplication)
+                .chatApp.loginAsync(Credentials.emailPassword(eMail, pWord)) {
+                if (it.isSuccess) {
+                    Log.v("QUICKSTART", "Successfully logged in Email: $eMail, Password: $pWord")
+
+                    val action : ActionLoginFragmentToChatRoomFragment =
+                        com.mongodb.realm.mongodblivechat.ui.login.LoginFragmentDirections.actionLoginFragmentToChatRoomFragment()
+                    action.email = editTextEmailAddress.text.toString()
+                    action.password = editTextPassword.text.toString()
+                    Navigation.findNavController(view).navigate(action)
+                } else {
+                    val eMsg = "Failed to log $eMail. Error: ${it.error.message}"
+                    Log.e("QUICKSTART", eMsg)
+                    setErrorMsg(eMail)
+                }
+            }
+        }
+    }
